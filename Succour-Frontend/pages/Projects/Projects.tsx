@@ -6,7 +6,7 @@ import Footer from '../../components/footer/Footer'
 import ProjectsDetail from '../../components/projects/Projects'
 
 const Projects = () => {
-<<<<<<< HEAD
+     
      return (
           <>
              <Navbar />
@@ -26,7 +26,6 @@ const Projects = () => {
                        </Link>
                     </div> 
                     </div>
-=======
    return (
          <>
             <Navbar />
@@ -43,7 +42,6 @@ const Projects = () => {
                      <Link href="/Propose/Propose">
                      <button className={styles.btn}>Propose a project</button>
                      </Link>
->>>>>>> d32647a491f8e9a2b7f3ba4c8a15252d7da31dcf
                   </div>
                   </div>
                </div>
