@@ -7,7 +7,7 @@ import Link from 'next/link'
 import {useRouter} from 'next/router'
 import arrowLeftSvg from '../../assets/arrow-left.svg'
 import Donatetime from '../../components/donatetime/Donatetime'
-import RelatedProjects from '../../components/relatedProjects/RelatedProjects'
+// import RelatedProjects from '../../components/relatedProjects/RelatedProjects'
 
 const ProjectPage = () => {
   
