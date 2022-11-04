@@ -4,11 +4,16 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
+import {useRouter} from 'next/link'
 import arrowLeftSvg from '../../assets/arrow-left.svg'
 import Donatetime from '../../components/donatetime/Donatetime'
 import RelatedProjects from '../../components/relatedProjects/RelatedProjects'
 
 const ProjectPage = () => {
+  
+    const {query} = useRouter()
+
+   const pageId = query.id
   
   return (
      <>
