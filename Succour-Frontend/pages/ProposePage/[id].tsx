@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import arrowLeftSvg from '../../assets/arrow-left.svg'
 import Votetime from '../../components/votetime/Votetime'
-import Otherproposal from '../../components/otherproposal/Otherproposal'
+// import Otherproposal from '../../components/otherproposal/Otherproposal'
 import { useContractRead } from 'wagmi'
 import { useRouter } from 'next/router'
 import Succour_abi from "../../abi/abi.json"
