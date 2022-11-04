@@ -1,17 +1,17 @@
-// import React, {useState} from 'react'
-// import styles from './otherproposal.module.scss'
-// import { data } from './data'
-// import Link from 'next/link'
+import React, {useState} from 'react'
+import styles from './otherproposal.module.scss'
+import { data } from './data'
+import Link from 'next/link'
 
-// const Otherproposal = () => {
+const Otherproposal = () => {
 
-//      const [visible, setVisible] = useState(3);
+     const [visible, setVisible] = useState(3);
 
-//      const handleMoreProjectItem = () => {
-//        setVisible((prevValue) => prevValue + 3);
-//      }
+     const handleMoreProjectItem = () => {
+       setVisible((prevValue) => prevValue + 3);
+     }
 
-//   return (
+  return (
 //     <div className={styles.otherproposal}>
 //       <div className={styles.wrapper}>
 //           <div className={styles.container}>
@@ -51,7 +51,7 @@
 //           </div>
 //       </div>
 //     </div>
-//   )
-// }
+  )
+}
 
-// export default Otherproposal
+export default Otherproposal
