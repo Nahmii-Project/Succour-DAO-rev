@@ -1,4 +1,4 @@
-// import Reacr, {useState} from 'react'
+// import React, {useState} from 'react'
 // import styles from './otherproposal.module.scss'
 // import { data } from './data'
 // import Link from 'next/link'
