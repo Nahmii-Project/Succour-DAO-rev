@@ -13,12 +13,19 @@ import Succour_abi from "../../abi/abi.json"
 import { ethers } from 'ethers'
 import { useRouter } from 'next/router'
 
-interface IntrinsicElements IProps {
-      showJoinModal: any;
-      setShowJoinModal: any;
+// interface IntrinsicElements IProps {
+//       showJoinModal: any;
+//       setShowJoinModal: any;
+// }
+
+declare module 'react' {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+     showJoinModal?: any;
+     setShowJoinModal?: any;
+  }
 }
 
-const JoinModal = ({ showJoinModal, setShowJoinModal } : IProps) => {
+const JoinModal = ({ showJoinModal, setShowJoinModal } : any) => {
 
   const SuccourAddress = "0x12F57C67FDd16109B549F0B40579694fE12bf9Fd"
   const cUSDaddress = "0x07b8b15Afd654e9334A3D63396B5f9092bfb0D9E";
