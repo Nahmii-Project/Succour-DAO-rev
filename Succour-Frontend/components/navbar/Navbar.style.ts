@@ -1,4 +1,5 @@
-import styled from "styled-components";
+//@ts-ignore
+import styled from 'styled-component';
 
 export const NavbarContainer = styled.nav`
  position: fixed;
