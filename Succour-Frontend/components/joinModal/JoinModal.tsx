@@ -13,7 +13,7 @@ import Succour_abi from "../../abi/abi.json"
 import { ethers } from 'ethers'
 import { useRouter } from 'next/router'
 
-interface IProps {
+interface IntrinsicElements IProps {
       showJoinModal: any;
       setShowJoinModal: any;
 }
@@ -134,7 +134,7 @@ const JoinModal = ({ showJoinModal, setShowJoinModal } : IProps) => {
       <div className={styles.join} ref={modalRef} onClick={closeModal}>
             {/* animating the whole container properties*/}
             <animated.div style={animation}>
-                <div className={styles.wrapper}  showJoinModal={showJoinModal}>
+                 <div className={styles.wrapper}  showJoinModal={showJoinModal}>
                 <div className={styles.closeButton} onClick={() => setShowJoinModal((prev : any) => !prev)}></div>
                 <div className={styles.container}>
                       <div className={styles.join_content}>
