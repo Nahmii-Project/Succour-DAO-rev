@@ -5,12 +5,19 @@ import walletIcon from '../../assets/wallet-1.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface IProps {
-     showProfileModal: any;
-     setShowProfileModal: any;
+// interface IProps {
+//      showProfileModal: any;
+//      setShowProfileModal: any;
+// }
+
+declare module 'react' {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+   showProfileModal?: any;
+     setShowProfileModal?: any;
+  }
 }
 
-const JoinModal = ({ showProfileModal, setShowProfileModal } : IProps) => {
+const JoinModal = ({ showProfileModal, setShowProfileModal } : any) => {
 
        const modalRef = useRef<any | any>();
       
