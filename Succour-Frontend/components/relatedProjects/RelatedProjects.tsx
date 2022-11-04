@@ -33,7 +33,7 @@ const RelatedProjects = () => {
                                {
                     data?.slice(0, visible)?.map(({ id, time, problemTitle, desc, lowest, etherAmount, voteButton }) => {
                        return (
-                         <Link href="#">
+//                          <Link href="#">
                          <div className={styles.project_item} key={id}>
                             <div className={styles.project_img}>
                               <Image src="" className={styles.img} alt="" />
@@ -55,7 +55,7 @@ const RelatedProjects = () => {
                               </div>
                            </div> 
                          </div>
-                           </Link>
+//                            </Link>
                               )
                            })
                          }
