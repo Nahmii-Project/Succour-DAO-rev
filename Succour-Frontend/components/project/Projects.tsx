@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Link from 'next/link'
 import styles from './project.module.scss'
 import Image from 'next/image'
-import { data } from '../../pages/data'
+import { data } from '../../data'
 import { useContractRead, useAccount } from 'wagmi'
 import Succour_abi from "../../abi/abi.json"
 import { Any } from '@react-spring/types'

@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Link from 'next/link'
 import styles from './relatedprojects.module.scss'
 import Image from 'next/image'
-import { data } from '../../pages/data'
+import { data } from '../../data'
 
 
 const RelatedProjects = () => {

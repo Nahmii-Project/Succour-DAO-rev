@@ -2,7 +2,7 @@ import {useState} from 'react'
 import styles from './projects.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import { data } from '../../pages/data'
+import { data } from '../../data'
 import Succour_abi from "../../abi/abi.json"
 import { useAccount, useContractRead } from 'wagmi'
 
