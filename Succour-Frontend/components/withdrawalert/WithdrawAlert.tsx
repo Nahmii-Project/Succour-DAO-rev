@@ -74,6 +74,8 @@ const WithdrawAlert = ({ showModal, setShowModal } : IProps) => {
               { position: toast.POSITION.TOP_CENTER })
         }
     })
+    
+    export {};
 
     const {isLoading: rtwLoader} = useWaitForTransaction({
         hash: requestToWithdrawData?.hash,
@@ -91,6 +93,8 @@ const WithdrawAlert = ({ showModal, setShowModal } : IProps) => {
               { position: toast.POSITION.TOP_CENTER })
         }
     })
+    
+    export {};
 
     const handleSubmit = (e:any) => {
       e.preventDefault();
