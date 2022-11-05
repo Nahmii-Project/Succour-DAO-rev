@@ -29,7 +29,7 @@ const otherfundraisers = () => {
                          <Link href={`/FundraiserProject/${id}`}>
                          <div className={styles.fundraiser_item} key={id}>
                             <div className={styles.fundraiser_img}>
-                              <Image src="" className={styles.img} />
+                              <Image src="" className={styles.img} alt="" />
                             </div> 
                             <div className={styles.fundraiser_text}>
                               <div className={styles.fundraiser_titled}>{problemTitle}</div>
