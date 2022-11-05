@@ -58,7 +58,7 @@ const WithdrawAlert = ({ showModal, setShowModal } : IProps) => {
         functionName: 'requestToWithdrawDAO'
     })
 
-    const {isLoading: rtwLoader} = useWaitForTransaction({
+    var {isLoading: rtwLoader} = useWaitForTransaction({
         hash: requestToWithdrawData?.hash,
         onSuccess(){
               // add toastify; input: You've Requested for withdrawal
@@ -77,7 +77,7 @@ const WithdrawAlert = ({ showModal, setShowModal } : IProps) => {
     
     export {};
 
-    const {isLoading: rtwLoader} = useWaitForTransaction({
+    var {isLoading: rtwLoader} = useWaitForTransaction({
         hash: requestToWithdrawData?.hash,
         onSuccess(){
               // add toastify; input: You've Requested for withdrawal
