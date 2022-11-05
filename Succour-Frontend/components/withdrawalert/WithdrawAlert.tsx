@@ -9,12 +9,19 @@ import Succour_abi from "../../abi/abi.json"
 import { useContractWrite, useWaitForTransaction } from 'wagmi'
 import { ToastContainer, toast } from 'react-toastify'
 
-interface IProps {
-     showModal: any;
-     setShowModal: any;
+// interface IProps {
+//      showModal: any;
+//      setShowModal: any;
+// }
+
+declare module 'react' {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+     showModal?: any;
+     setShowModal?: any;
+  }
 }
 
-const WithdrawAlert = ({ showModal, setShowModal } : IProps) => {
+const WithdrawAlert = ({ showModal, setShowModal } : any) => {
      
        const SuccourAddress = "0x12F57C67FDd16109B549F0B40579694fE12bf9Fd"
        const router = useRouter();
