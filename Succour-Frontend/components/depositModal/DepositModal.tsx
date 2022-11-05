@@ -11,12 +11,19 @@ import { Hash } from 'crypto'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { ToastContainer, toast } from 'react-toastify'
 
-interface IProps {
-     showDepositModal: any;
-     setShowDepositModal: any;
+// interface IProps {
+//      showDepositModal: any;
+//      setShowDepositModal: any;
+// }
+
+declare module 'react' {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+     showDepositModal?: any;
+     setShowDespositModal?: any;
+  }
 }
 
-const DepositModal = ({ showDepositModal, setShowDepositModal } : IProps) => {
+const DepositModal = ({ showDepositModal, setShowDepositModal } : any) => {
 
   const SuccourAddress = "0x12F57C67FDd16109B549F0B40579694fE12bf9Fd"
   const [depositamount, setDepositamount] = useState("");
