@@ -1,5 +1,5 @@
 //@ts-ignore
-import styled from 'styled-component';
+import styled from 'styled-components';
 
 //@ts-ignore
 export const NavbarContainer = styled.nav`
